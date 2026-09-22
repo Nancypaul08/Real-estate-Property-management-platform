@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REAL ESTATE PROPERTY MANAGEMENT PLATFORM</title>
+    <meta name="description" content="Premium real estate property management platform for finding, viewing, and managing properties." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Home">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">REAL ESTATE PROPERTY MANAGEMENT PLATFORM</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="properties.html">Properties</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#owner-panel" class="btn btn-secondary btn-small">Owner Panel</a>
+          <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+          <a href="register.html" class="btn btn-primary btn-small">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <p class="section-tag">Trusted Real Estate Network</p>
+            <h1>Find Your Perfect Property</h1>
+            <p>Discover top-rated homes, premium apartments, and investment-ready properties in the best neighborhoods across the city.</p>
+            <div class="hero-cta-row">
+              <a href="properties.html" class="btn btn-primary">Explore Properties</a>
+              <a href="register.html" class="btn btn-secondary">List Your Property</a>
+            </div>
+          </div>
+
+          <div class="search-panel" aria-label="Property search panel">
+            <div class="search-box">
+              <div class="field">
+                <label for="location">Location</label>
+                <input id="location" type="text" value="Downtown, New York" />
+              </div>
+              <div class="field">
+                <label for="type">Property Type</label>
+                <select id="type">
+                  <option>Apartment</option>
+                  <option>Villa</option>
+                  <option>House</option>
+                  <option>Commercial</option>
+                  <option>Land</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="price">Price Range</label>
+                <select id="price">
+                  <option>$500k - $1M</option>
+                  <option>$1M - $2M</option>
+                  <option>$2M - $5M</option>
+                  <option>$5M+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="bedrooms">Bedrooms</label>
+                <select id="bedrooms">
+                  <option>Any</option>
+                  <option>1+</option>
+                  <option>2+</option>
+                  <option>3+</option>
+                  <option>4+</option>
+                </select>
+              </div>
+              <a href="properties.html" class="btn btn-primary">Search</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="owner-panel" class="section section-surface">
+        <div class="container">
+          <div class="section-header center">
+            <p class="section-tag">Owner Dashboard</p>
+            <h2>REAL ESTATE PROPERTY MANAGEMENT PLATFORM</h2>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-card">
+              <div class="label">Total Properties</div>
+              <strong>24</strong>
+              <span class="trend">+12% this month</span>
+            </div>
+            <div class="metric-card">
+              <div class="label">Active Listings</div>
+              <strong>18</strong>
+              <span class="trend">+8% this month</span>
+            </div>
+            <div class="metric-card">
+              <div class="label">Pending Review</div>
+              <strong>4</strong>
+              <span class="trend">2 awaiting check</span>
+            </div>
+            <div class="metric-card">
+              <div class="label">Inquiries</div>
+              <strong>132</strong>
+              <span class="trend">+15 this week</span>
+            </div>
+            <div class="metric-card">
+              <div class="label">Bookings</div>
+              <strong>42</strong>
+              <span class="trend">+6 this week</span>
+            </div>
+          </div>
+
+          <div class="panel" style="margin-top: 24px;">
+            <div class="panel-header">
+              <h3>Owner Summary</h3>
+              <a href="owner/dashboard.html" class="btn btn-primary btn-small">Open Owner Panel</a>
+            </div>
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Views</th>
+                    <th>Inquiries</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ocean View Villa</td>
+                    <td>Malibu, CA</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td>1,452</td>
+                    <td>48</td>
+                  </tr>
+                  <tr>
+                    <td>Skyline Residence</td>
+                    <td>New York, NY</td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                    <td>886</td>
+                    <td>29</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header center">
+            <p class="section-tag">Featured Listings</p>
+            <h2>Premium Properties for Every Lifestyle</h2>
+          </div>
+
+          <div class="featured-grid">
+            <article class="card property-card">
+              <div class="image-wrap">
+                <span class="badge featured-badge">Featured</span>
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="Modern villa exterior" />
+              </div>
+              <div class="property-body">
+                <div class="meta-row">
+                  <span class="badge type-badge">Villa</span>
+                  <span class="price"><small>$</small>2.8M</span>
+                </div>
+                <h3 class="property-title">Ocean View Villa</h3>
+                <div class="location-line">📍 Malibu, California</div>
+                <div class="spec-grid">
+                  <span>🛏 4 Beds</span>
+                  <span>🛁 3 Baths</span>
+                  <span>📐 3200 sq ft</span>
+                  <span>👁 View</span>
+                </div>
+                <div class="property-cta">
+                  <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card property-card">
+              <div class="image-wrap">
+                <span class="badge featured-badge">Popular</span>
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Luxury apartment building" />
+              </div>
+              <div class="property-body">
+                <div class="meta-row">
+                  <span class="badge type-badge">Apartment</span>
+                  <span class="price"><small>$</small>980K</span>
+                </div>
+                <h3 class="property-title">Skyline Residence</h3>
+                <div class="location-line">📍 Manhattan, New York</div>
+                <div class="spec-grid">
+                  <span>🛏 3 Beds</span>
+                  <span>🛁 2 Baths</span>
+                  <span>📐 1800 sq ft</span>
+                  <span>🏙 City</span>
+                </div>
+                <div class="property-cta">
+                  <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card property-card">
+              <div class="image-wrap">
+                <span class="badge featured-badge">New</span>
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80" alt="Modern family home" />
+              </div>
+              <div class="property-body">
+                <div class="meta-row">
+                  <span class="badge type-badge">House</span>
+                  <span class="price"><small>$</small>1.6M</span>
+                </div>
+                <h3 class="property-title">Maple Crest House</h3>
+                <div class="location-line">📍 Austin, Texas</div>
+                <div class="spec-grid">
+                  <span>🛏 4 Beds</span>
+                  <span>🛁 3 Baths</span>
+                  <span>📐 2600 sq ft</span>
+                  <span>🌿 Garden</span>
+                </div>
+                <div class="property-cta">
+                  <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card property-card">
+              <div class="image-wrap">
+                <span class="badge featured-badge">Investment</span>
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Office and commercial property" />
+              </div>
+              <div class="property-body">
+                <div class="meta-row">
+                  <span class="badge type-badge">Commercial</span>
+                  <span class="price"><small>$</small>4.2M</span>
+                </div>
+                <h3 class="property-title">Business Hub Plaza</h3>
+                <div class="location-line">📍 Chicago, Illinois</div>
+                <div class="spec-grid">
+                  <span>🛏 12 Units</span>
+                  <span>🛁 4 Floors</span>
+                  <span>📐 5400 sq ft</span>
+                  <span>💼 Office</span>
+                </div>
+                <div class="property-cta">
+                  <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface">
+        <div class="container">
+          <div class="section-header center">
+            <p class="section-tag">Browse by Category</p>
+            <h2>Explore Market Segments</h2>
+          </div>
+
+          <div class="category-grid">
+            <div class="category-box">
+              <div class="icon">🏢</div>
+              <h3>Apartment</h3>
+              <p>62 listings</p>
+            </div>
+            <div class="category-box">
+              <div class="icon">🏡</div>
+              <h3>Villa</h3>
+              <p>28 listings</p>
+            </div>
+            <div class="category-box">
+              <div class="icon">🏠</div>
+              <h3>House</h3>
+              <p>41 listings</p>
+            </div>
+            <div class="category-box">
+              <div class="icon">🏬</div>
+              <h3>Commercial</h3>
+              <p>18 listings</p>
+            </div>
+            <div class="category-box">
+              <div class="icon">🌱</div>
+              <h3>Land</h3>
+              <p>23 listings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header center">
+            <p class="section-tag">Why Choose Us</p>
+            <h2>Built for Smarter Property Decisions</h2>
+          </div>
+
+          <div class="why-grid">
+            <div class="benefit-card">
+              <div class="icon-plate">✅</div>
+              <h3>Verified Properties</h3>
+              <p>All listings are checked and validated by our expert quality team before publication.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="icon-plate">🤝</div>
+              <h3>Trusted Owners</h3>
+              <p>Work with legitimate and verified property owners with transparent communication.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="icon-plate">📅</div>
+              <h3>Easy Booking</h3>
+              <p>Quick seamless inquiry and booking processes for buyers, renters, and investors.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="icon-plate">🔒</div>
+              <h3>Secure Platform</h3>
+              <p>Protected account access and trusted workflows that prioritize your privacy and safety.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface">
+        <div class="container">
+          <div class="section-header center">
+            <p class="section-tag">Platform Overview</p>
+            <h2>Numbers That Matter</h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stats-card">
+              <span class="stats-number">1,250+</span>
+              <h3>Total Properties</h3>
+            </div>
+            <div class="stats-card">
+              <span class="stats-number">18.4K</span>
+              <h3>Happy Users</h3>
+            </div>
+            <div class="stats-card">
+              <span class="stats-number">420</span>
+              <h3>Verified Owners</h3>
+            </div>
+            <div class="stats-card">
+              <span class="stats-number">7,890</span>
+              <h3>Successful Bookings</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="brand" aria-label="PropertyPro home">
+              <span class="brand-mark">R</span>
+              <span class="brand-text">PropertyPro</span>
+            </a>
+            <p style="margin-top: 18px; max-width: 300px;">The modern platform for discovering, booking, and managing premium properties with confidence.</p>
+          </div>
+
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Property Links</h4>
+            <ul class="footer-list">
+              <li><a href="properties.html">Apartments</a></li>
+              <li><a href="properties.html">Villas</a></li>
+              <li><a href="properties.html">Commercial</a></li>
+              <li><a href="properties.html">Land</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contact</h4>
+            <ul class="footer-list">
+              <li>📍 78 Harbor Avenue, NYC</li>
+              <li>✉️ hello@propertypro.com</li>
+              <li>📞 +1 (415) 789-2034</li>
+              <li>💬 Instagram • LinkedIn • Facebook</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 PropertyPro. All rights reserved.</span>
+          <span>Real Estate Property Management Platform</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

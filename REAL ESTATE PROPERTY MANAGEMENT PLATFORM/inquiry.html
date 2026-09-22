@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inquiry | PropertyPro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Home">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="properties.html" class="active">Properties</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+          <a href="register.html" class="btn btn-primary btn-small">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container page-banner-inner">
+          <div>
+            <div class="breadcrumbs">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <a href="properties.html">Properties</a>
+              <span>/</span>
+              <span>Inquiry</span>
+            </div>
+            <h1>Property Inquiry</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-wrap">
+        <div class="container inquiry-layout">
+          <aside class="summary-card">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Property summary" />
+            <div class="summary-body">
+              <span class="badge type-badge">Villa</span>
+              <h3 style="margin-top: 12px;">Ocean View Villa</h3>
+              <div class="location-line">📍 Malibu, California</div>
+              <div class="price">$2.8M</div>
+              <div class="spec-grid" style="margin-top: 18px;">
+                <span>🛏 4 Beds</span>
+                <span>🛁 3 Baths</span>
+                <span>📐 3200 sq ft</span>
+                <span>📍 Sea View</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="form-card">
+            <h3>Send an Inquiry</h3>
+            <form class="user-form" action="index.html">
+              <div class="form-row">
+                <div class="field">
+                  <label for="inq-name">Full Name</label>
+                  <input id="inq-name" type="text" value="Emma Johnson" />
+                </div>
+                <div class="field">
+                  <label for="inq-email">Email</label>
+                  <input id="inq-email" type="email" value="emma@example.com" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="inq-phone">Phone</label>
+                  <input id="inq-phone" type="tel" value="+1 415 678 2032" />
+                </div>
+                <div class="field">
+                  <label for="inq-date">Preferred Visit Date</label>
+                  <input id="inq-date" type="date" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="inq-time">Preferred Time</label>
+                  <select id="inq-time">
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="inq-type">Inquiry Type</label>
+                  <select id="inq-type">
+                    <option>General Inquiry</option>
+                    <option>Book Viewing</option>
+                    <option>Pricing Details</option>
+                    <option>Loan Assistance</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="inq-message">Message</label>
+                <textarea id="inq-message">Hello, I would like to schedule a property visit and learn more about the financing options available.</textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+              <div class="notice">Your inquiry will be sent to the property owner.</div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="brand" aria-label="PropertyPro home">
+              <span class="brand-mark">R</span>
+              <span class="brand-text">PropertyPro</span>
+            </a>
+            <p style="margin-top: 18px; max-width: 320px;">Premium property marketplace and management platform for modern buyers, owners, and investors.</p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Popular Areas</h4>
+            <ul class="footer-list">
+              <li>Malibu</li>
+              <li>Miami</li>
+              <li>New York</li>
+              <li>Chicago</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get in Touch</h4>
+            <ul class="footer-list">
+              <li>📍 78 Harbor Avenue, NYC</li>
+              <li>✉️ hello@propertypro.com</li>
+              <li>📞 +1 (415) 789-2034</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 PropertyPro. All rights reserved.</span>
+          <span>Real Estate Property Management Platform</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

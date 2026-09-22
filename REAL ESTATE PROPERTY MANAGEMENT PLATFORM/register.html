@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | PropertyPro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="auth-visual" aria-label="Property lifestyle image">
+          <div class="auth-badge">
+            <strong>Grow</strong>
+            <span>Find the right home or manage your portfolio.</span>
+          </div>
+        </div>
+
+        <div class="auth-content">
+          <div class="auth-header">
+            <a href="index.html" class="brand" aria-label="Back to home">
+              <span class="brand-mark">R</span>
+              <span class="brand-text">PropertyPro</span>
+            </a>
+            <h2>Create Account</h2>
+            <p>Join thousands of buyers, renters, and property owners.</p>
+          </div>
+
+          <form class="auth-form" action="login.html">
+            <div class="form-row">
+              <div class="field">
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="John Smith" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" placeholder="+1 234 567 890" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reg-email">Email</label>
+              <input id="reg-email" type="email" placeholder="you@example.com" />
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="reg-password">Password</label>
+                <input id="reg-password" type="password" placeholder="Create password" />
+              </div>
+              <div class="field">
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" type="password" placeholder="Confirm password" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="user-type">User Type</label>
+              <select id="user-type">
+                <option>Buyer / Tenant</option>
+                <option>Property Owner</option>
+              </select>
+            </div>
+
+            <label class="checkbox-wrap">
+              <input type="checkbox" checked />
+              <span>I agree to the terms and privacy policy</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+
+            <p style="text-align: center; margin-top: 4px;">
+              Already have an account?
+              <a href="login.html" class="auth-link">Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

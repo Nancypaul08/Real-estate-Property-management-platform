@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | PropertyPro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="auth-visual" aria-label="Luxury property image">
+          <div class="auth-badge">
+            <strong>24/7</strong>
+            <span>Property support for buyers and owners</span>
+          </div>
+        </div>
+
+        <div class="auth-content">
+          <div class="auth-header">
+            <a href="index.html" class="brand" aria-label="Back to home">
+              <span class="brand-mark">R</span>
+              <span class="brand-text">PropertyPro</span>
+            </a>
+            <h2>Welcome Back</h2>
+            <p>Sign in to manage your listings, inbox, and bookings.</p>
+          </div>
+
+          <form class="auth-form" action="owner/dashboard.html">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" />
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="Enter your password" />
+            </div>
+
+            <div class="check-row">
+              <label class="checkbox-wrap">
+                <input type="checkbox" checked />
+                <span>Remember me</span>
+              </label>
+              <a href="index.html" class="auth-link">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            <p style="text-align: center; margin-top: 4px;">
+              Don’t have an account?
+              <a href="register.html" class="auth-link">Register</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
