@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties | REAL ESTATE PROPERTY MANAGEMENT PLATFORM</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Home">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">REAL ESTATE PROPERTY MANAGEMENT PLATFORM</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="properties.html" class="active">Properties</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+          <a href="register.html" class="btn btn-primary btn-small">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container page-banner-inner">
+          <div>
+            <div class="breadcrumbs">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <span>Properties</span>
+            </div>
+            <h1>Explore Properties</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-wrap">
+        <div class="container">
+          <div class="search-panel" style="margin-bottom: 28px;">
+            <div class="search-box">
+              <div class="field">
+                <label for="search-location">Location</label>
+                <input id="search-location" type="text" value="Any city" />
+              </div>
+              <div class="field">
+                <label for="search-type">Property Type</label>
+                <select id="search-type">
+                  <option>Apartment</option>
+                  <option>Villa</option>
+                  <option>House</option>
+                  <option>Commercial</option>
+                  <option>Land</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="min-price">Min Price</label>
+                <select id="min-price">
+                  <option>$500k</option>
+                  <option>$1M</option>
+                  <option>$2M</option>
+                  <option>$5M</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="max-price">Max Price</label>
+                <select id="max-price">
+                  <option>$1M</option>
+                  <option>$2M</option>
+                  <option>$5M</option>
+                  <option>$10M</option>
+                </select>
+              </div>
+              <a href="properties.html" class="btn btn-primary">Search</a>
+            </div>
+          </div>
+
+          <div class="listing-layout">
+            <aside>
+              <div class="sidebar-card">
+                <h3>Filter by Property Type</h3>
+                <div class="filter-group">
+                  <label class="filter-item"><span>Apartment</span><input type="checkbox" checked /></label>
+                  <label class="filter-item"><span>Villa</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>House</span><input type="checkbox" checked /></label>
+                  <label class="filter-item"><span>Commercial</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>Land</span><input type="checkbox" /></label>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Price Range</h3>
+                <div class="filter-group">
+                  <div class="field">
+                    <label for="filter-min">Min</label>
+                    <input id="filter-min" type="text" value="$500k" />
+                  </div>
+                  <div class="field">
+                    <label for="filter-max">Max</label>
+                    <input id="filter-max" type="text" value="$5M" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Location</h3>
+                <div class="filter-group">
+                  <label class="filter-item"><span>New York</span><input type="checkbox" checked /></label>
+                  <label class="filter-item"><span>Chicago</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>Los Angeles</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>Miami</span><input type="checkbox" /></label>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Bedrooms</h3>
+                <div class="filter-group">
+                  <label class="filter-item"><span>1+</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>2+</span><input type="checkbox" checked /></label>
+                  <label class="filter-item"><span>3+</span><input type="checkbox" checked /></label>
+                  <label class="filter-item"><span>4+</span><input type="checkbox" /></label>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Furnishing</h3>
+                <div class="filter-group">
+                  <label class="filter-item"><span>Fully Furnished</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>Semi Furnished</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>Unfurnished</span><input type="checkbox" checked /></label>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Property Status</h3>
+                <div class="filter-group">
+                  <label class="filter-item"><span>For Sale</span><input type="checkbox" checked /></label>
+                  <label class="filter-item"><span>For Rent</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>New Launch</span><input type="checkbox" /></label>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <div class="form-actions" style="justify-content: flex-start;">
+                  <button type="button" class="btn btn-primary">Apply Filters</button>
+                  <button type="button" class="btn btn-outline">Clear Filters</button>
+                </div>
+              </div>
+            </aside>
+
+            <section>
+              <div class="list-toolbar">
+                <h2>48 Properties Found</h2>
+                <div class="toolbar-actions">
+                  <select class="field" style="min-width: 160px;">
+                    <option>Sort: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                  </select>
+                  <div class="pill-toggle">
+                    <a href="#" class="active">Grid</a>
+                    <a href="#">List</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-grid">
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Featured</span>
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=80" alt="Luxury villa" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Villa</span>
+                      <span class="price"><small>$</small>2.8M</span>
+                    </div>
+                    <h3 class="property-title">Coastal Retreat Villa</h3>
+                    <div class="location-line">📍 Malibu, California</div>
+                    <div class="spec-grid">
+                      <span>🛏 4 Beds</span>
+                      <span>🛁 3 Baths</span>
+                      <span>📐 3200 sq ft</span>
+                      <span>📍 Sea View</span>
+                    </div>
+                    <p style="margin-top: 14px;">Exclusive oceanfront villa with landscaped garden, private terrace, and premium amenities.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80" alt="Apartment exterior" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Apartment</span>
+                      <span class="price"><small>$</small>980K</span>
+                    </div>
+                    <h3 class="property-title">Skyline Residence</h3>
+                    <div class="location-line">📍 Manhattan, New York</div>
+                    <div class="spec-grid">
+                      <span>🛏 3 Beds</span>
+                      <span>🛁 2 Baths</span>
+                      <span>📐 1800 sq ft</span>
+                      <span>🏙 City</span>
+                    </div>
+                    <p style="margin-top: 14px;">A contemporary two-bedroom apartment featuring floor-to-ceiling windows and city skyline views.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Popular</span>
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="Family home" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">House</span>
+                      <span class="price"><small>$</small>1.6M</span>
+                    </div>
+                    <h3 class="property-title">Maple Crest House</h3>
+                    <div class="location-line">📍 Austin, Texas</div>
+                    <div class="spec-grid">
+                      <span>🛏 4 Beds</span>
+                      <span>🛁 3 Baths</span>
+                      <span>📐 2600 sq ft</span>
+                      <span>🌿 Yard</span>
+                    </div>
+                    <p style="margin-top: 14px;">Energy-efficient family home with flexible living spaces, premium finishings, and a large garden.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Prime</span>
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" alt="Commercial building" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Commercial</span>
+                      <span class="price"><small>$</small>4.2M</span>
+                    </div>
+                    <h3 class="property-title">Business Hub Plaza</h3>
+                    <div class="location-line">📍 Chicago, Illinois</div>
+                    <div class="spec-grid">
+                      <span>🛏 12 Units</span>
+                      <span>🛁 4 Floors</span>
+                      <span>📐 5400 sq ft</span>
+                      <span>💼 Office</span>
+                    </div>
+                    <p style="margin-top: 14px;">High-demand commercial mixed-use asset in a prime downtown business district.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Open</span>
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Townhouse" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Townhouse</span>
+                      <span class="price"><small>$</small>1.1M</span>
+                    </div>
+                    <h3 class="property-title">Horizon Townhouse</h3>
+                    <div class="location-line">📍 Seattle, Washington</div>
+                    <div class="spec-grid">
+                      <span>🛏 3 Beds</span>
+                      <span>🛁 2 Baths</span>
+                      <span>📐 2100 sq ft</span>
+                      <span>🏘 Smart</span>
+                    </div>
+                    <p style="margin-top: 14px;">Modern townhouse with designer interiors, private patio, and smart-home features.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Luxury</span>
+                    <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80" alt="Luxury penthouse" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Penthouse</span>
+                      <span class="price"><small>$</small>3.4M</span>
+                    </div>
+                    <h3 class="property-title">Empire Penthouse</h3>
+                    <div class="location-line">📍 Miami, Florida</div>
+                    <div class="spec-grid">
+                      <span>🛏 4 Beds</span>
+                      <span>🛁 3 Baths</span>
+                      <span>📐 2900 sq ft</span>
+                      <span>🌤 Roof</span>
+                    </div>
+                    <p style="margin-top: 14px;">Ultra-luxury top-floor residence with panoramic bay views and rooftop pool access.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Ready</span>
+                    <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1000&q=80" alt="Urban apartment" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Apartment</span>
+                      <span class="price"><small>$</small>740K</span>
+                    </div>
+                    <h3 class="property-title">Harbor Point</h3>
+                    <div class="location-line">📍 Boston, Massachusetts</div>
+                    <div class="spec-grid">
+                      <span>🛏 2 Beds</span>
+                      <span>🛁 2 Baths</span>
+                      <span>📐 1500 sq ft</span>
+                      <span>🏊 Pool</span>
+                    </div>
+                    <p style="margin-top: 14px;">Sophisticated urban apartment with bright interiors and residents-only amenities.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card property-card large">
+                  <div class="image-wrap">
+                    <span class="badge featured-badge">Land</span>
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80" alt="Vacant land" />
+                  </div>
+                  <div class="property-body">
+                    <div class="meta-row">
+                      <span class="badge type-badge">Land</span>
+                      <span class="price"><small>$</small>620K</span>
+                    </div>
+                    <h3 class="property-title">Green Valley Plot</h3>
+                    <div class="location-line">📍 Denver, Colorado</div>
+                    <div class="spec-grid">
+                      <span>📍 1.8 Acres</span>
+                      <span>🌳 Scenic</span>
+                      <span>🚗 Road Access</span>
+                      <span>🏗 Buildable</span>
+                    </div>
+                    <p style="margin-top: 14px;">Build-ready land parcel with scenic views, road access, and strong development appeal.</p>
+                    <div class="property-cta">
+                      <a href="property-details.html" class="btn btn-primary btn-small">View Details</a>
+                      <a href="inquiry.html" class="btn btn-secondary btn-small">Inquiry</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="brand" aria-label="REAL ESTATE PROPERTY MANAGEMENT PLATFORM home">
+              <span class="brand-mark">R</span>
+              <span class="brand-text">REAL ESTATE PROPERTY MANAGEMENT PLATFORM</span>
+            </a>
+            <p style="margin-top: 18px; max-width: 320px;">Premium property marketplace and management platform for modern buyers, owners, and investors.</p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Popular Areas</h4>
+            <ul class="footer-list">
+              <li>New York</li>
+              <li>Los Angeles</li>
+              <li>Miami</li>
+              <li>Chicago</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get in Touch</h4>
+            <ul class="footer-list">
+              <li>📍 78 Harbor Avenue, NYC</li>
+              <li>✉️ hello@realestatepropertymanagementplatform.com</li>
+              <li>📞 +1 (415) 789-2034</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 REAL ESTATE PROPERTY MANAGEMENT PLATFORM. All rights reserved.</span>
+          <span>REAL ESTATE PROPERTY MANAGEMENT PLATFORM</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
