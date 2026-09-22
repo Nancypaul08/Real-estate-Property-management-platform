@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Property | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Owner sidebar navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a class="active" href="add-property.html">Add Property</a>
+          <a href="my-properties.html">My Properties</a>
+          <a href="dashboard.html">Inquiries</a>
+          <a href="dashboard.html">Profile</a>
+          <a href="dashboard.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Add Property</h1>
+          <div class="topbar-actions">
+            <span class="avatar-badge">DM</span>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <div class="section-title">
+            <h2>Submit New Property</h2>
+            <span class="status-pill">Draft</span>
+          </div>
+
+          <form class="form-card-large" action="my-properties.html">
+            <div class="form-section">
+              <h4>Property Information</h4>
+              <div class="form-row">
+                <div class="field">
+                  <label for="title">Property Title</label>
+                  <input id="title" type="text" value="Ocean View Villa" />
+                </div>
+                <div class="field">
+                  <label for="type">Property Type</label>
+                  <select id="type">
+                    <option>Villa</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                    <option>Commercial</option>
+                    <option>Land</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="status">Property Status</label>
+                  <select id="status">
+                    <option>Available</option>
+                    <option>Pending</option>
+                    <option>Sold</option>
+                    <option>Rented</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="furnishing">Furnishing</label>
+                  <select id="furnishing">
+                    <option>Fully Furnished</option>
+                    <option>Semi Furnished</option>
+                    <option>Unfurnished</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="description">Description</label>
+                <textarea id="description">Luxurious coastal property with open-plan layout, premium finishes, and private terrace access.</textarea>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h4>Location</h4>
+              <div class="form-row">
+                <div class="field" style="grid-column: 1 / -1;">
+                  <label for="address">Address</label>
+                  <input id="address" type="text" value="45 Ocean Crest Avenue" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="city">City</label>
+                  <input id="city" type="text" value="Malibu" />
+                </div>
+                <div class="field">
+                  <label for="state">State</label>
+                  <input id="state" type="text" value="California" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="pincode">Pincode</label>
+                  <input id="pincode" type="text" value="90265" />
+                </div>
+                <div class="field">
+                  <label for="landmark">Landmark</label>
+                  <input id="landmark" type="text" value="Near Malibu Beach" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h4>Property Details</h4>
+              <div class="form-row">
+                <div class="field">
+                  <label for="price">Price</label>
+                  <input id="price" type="text" value="$2,800,000" />
+                </div>
+                <div class="field">
+                  <label for="area">Area</label>
+                  <input id="area" type="text" value="3200 sq ft" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bedrooms">Bedrooms</label>
+                  <input id="bedrooms" type="number" value="4" />
+                </div>
+                <div class="field">
+                  <label for="bathrooms">Bathrooms</label>
+                  <input id="bathrooms" type="number" value="3" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="floors">Floors</label>
+                  <input id="floors" type="number" value="2" />
+                </div>
+                <div class="field">
+                  <label for="parking">Parking</label>
+                  <input id="parking" type="number" value="2" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h4>Amenities</h4>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" checked /> Parking</label>
+                <label><input type="checkbox" checked /> Balcony</label>
+                <label><input type="checkbox" checked /> Garden</label>
+                <label><input type="checkbox" checked /> Swimming Pool</label>
+                <label><input type="checkbox" checked /> Lift</label>
+                <label><input type="checkbox" checked /> Security</label>
+                <label><input type="checkbox" checked /> CCTV</label>
+                <label><input type="checkbox" checked /> Power Backup</label>
+                <label><input type="checkbox" /> Gym</label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h4>Property Images</h4>
+              <div class="upload-box">
+                <div class="upload-area">Drag & Drop Photos Here</div>
+                <div class="upload-thumbs">
+                  <div class="upload-thumb">Front View</div>
+                  <div class="upload-thumb">Living Room</div>
+                  <div class="upload-thumb">Kitchen</div>
+                  <div class="upload-thumb">Pool Area</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary">Save Draft</button>
+              <button type="submit" class="btn btn-primary">Publish Property</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

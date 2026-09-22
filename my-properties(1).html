@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Properties | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Owner sidebar navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="add-property.html">Add Property</a>
+          <a class="active" href="my-properties.html">My Properties</a>
+          <a href="dashboard.html">Inquiries</a>
+          <a href="dashboard.html">Profile</a>
+          <a href="dashboard.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>My Properties</h1>
+          <div class="topbar-actions">
+            <input class="field search-box-small" type="text" value="Search property" />
+            <a href="add-property.html" class="btn btn-primary btn-small">Add New Property</a>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 24px;">
+          <div class="section-title">
+            <h3>Filter Properties</h3>
+            <div class="toolbar-actions">
+              <select class="field" style="min-width: 180px;">
+                <option>All Status</option>
+                <option>Active</option>
+                <option>Pending</option>
+                <option>Sold</option>
+                <option>Rented</option>
+                <option>Rejected</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Location</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Views</th>
+                <th>Inquiries</th>
+                <th>Created</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:64px;height:52px;border-radius:10px;object-fit:cover;" />
+                    <strong>Ocean View Villa</strong>
+                  </div>
+                </td>
+                <td>Malibu, CA</td>
+                <td>$2.8M</td>
+                <td>Villa</td>
+                <td><span class="status-badge status-active">Active</span></td>
+                <td>1,452</td>
+                <td>48</td>
+                <td>12 Aug 2026</td>
+                <td>
+                  <a href="edit-property.html" class="action-btn primary">Edit</a>
+                  <a href="#" class="action-btn">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:64px;height:52px;border-radius:10px;object-fit:cover;" />
+                    <strong>Skyline Residence</strong>
+                  </div>
+                </td>
+                <td>New York, NY</td>
+                <td>$980K</td>
+                <td>Apartment</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td>886</td>
+                <td>29</td>
+                <td>03 Aug 2026</td>
+                <td>
+                  <a href="edit-property.html" class="action-btn primary">Edit</a>
+                  <a href="#" class="action-btn">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:64px;height:52px;border-radius:10px;object-fit:cover;" />
+                    <strong>Maple Crest House</strong>
+                  </div>
+                </td>
+                <td>Austin, TX</td>
+                <td>$1.6M</td>
+                <td>House</td>
+                <td><span class="status-badge status-sold">Sold</span></td>
+                <td>2,120</td>
+                <td>61</td>
+                <td>20 Jul 2026</td>
+                <td>
+                  <a href="edit-property.html" class="action-btn primary">Edit</a>
+                  <a href="#" class="action-btn">Delete</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:64px;height:52px;border-radius:10px;object-fit:cover;" />
+                    <strong>Business Hub Plaza</strong>
+                  </div>
+                </td>
+                <td>Chicago, IL</td>
+                <td>$4.2M</td>
+                <td>Commercial</td>
+                <td><span class="status-badge status-rented">Rented</span></td>
+                <td>934</td>
+                <td>20</td>
+                <td>11 Jul 2026</td>
+                <td>
+                  <a href="edit-property.html" class="action-btn primary">Edit</a>
+                  <a href="#" class="action-btn">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
