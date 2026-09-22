@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Bookings | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Admin sidebar navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="users.html">Users</a>
+          <a href="properties.html">Properties</a>
+          <a class="active" href="bookings.html">Bookings</a>
+          <a href="dashboard.html">Reports</a>
+          <a href="dashboard.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Manage Bookings</h1>
+          <div class="topbar-actions">
+            <input class="field search-box-small" type="text" value="Search booking" />
+            <a href="dashboard.html" class="btn btn-primary btn-small">Export</a>
+          </div>
+        </div>
+
+        <div class="metric-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 28px;">
+          <div class="metric-card">
+            <div class="label">Total Bookings</div>
+            <strong>7,890</strong>
+            <span class="trend">+480 this month</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Pending</div>
+            <strong>216</strong>
+            <span class="trend">Needs attention</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Confirmed</div>
+            <strong>4,210</strong>
+            <span class="trend">+132 this week</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Cancelled</div>
+            <strong>312</strong>
+            <span class="trend">Low rate</span>
+          </div>
+        </div>
+
+        <div class="table-wrap panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>User</th>
+                <th>Property</th>
+                <th>Owner</th>
+                <th>Booking Date</th>
+                <th>Visit Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BKG-1821</td>
+                <td>Emma Johnson</td>
+                <td>Ocean View Villa</td>
+                <td>David Morgan</td>
+                <td>12 Aug 2026</td>
+                <td>15 Aug 2026</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Confirm</a></td>
+              </tr>
+              <tr>
+                <td>BKG-1815</td>
+                <td>Nina Scott</td>
+                <td>Skyline Residence</td>
+                <td>Robert Chan</td>
+                <td>11 Aug 2026</td>
+                <td>14 Aug 2026</td>
+                <td><span class="status-badge status-confirmed">Confirmed</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Complete</a></td>
+              </tr>
+              <tr>
+                <td>BKG-1794</td>
+                <td>Daniel Lee</td>
+                <td>Maple Crest House</td>
+                <td>Elena White</td>
+                <td>08 Aug 2026</td>
+                <td>13 Aug 2026</td>
+                <td><span class="status-badge status-completed">Completed</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Complete</a></td>
+              </tr>
+              <tr>
+                <td>BKG-1765</td>
+                <td>Sarah Green</td>
+                <td>Business Hub Plaza</td>
+                <td>Michael Grant</td>
+                <td>07 Aug 2026</td>
+                <td>09 Aug 2026</td>
+                <td><span class="status-badge status-cancelled">Cancelled</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Confirm</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
