@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Admin sidebar navigation">
+          <a class="active" href="dashboard.html">Dashboard</a>
+          <a href="users.html">Users</a>
+          <a href="properties.html">Properties</a>
+          <a href="bookings.html">Bookings</a>
+          <a href="dashboard.html">Reports</a>
+          <a href="dashboard.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Admin Dashboard</h1>
+          <div class="topbar-actions">
+            <input class="field search-box-small" type="text" value="Search" />
+            <span class="avatar-badge">AD</span>
+          </div>
+        </div>
+
+        <div class="metric-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+          <div class="metric-card">
+            <div class="label">Total Users</div>
+            <strong>18.4K</strong>
+            <span class="trend">+12.3% this month</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Total Owners</div>
+            <strong>2,410</strong>
+            <span class="trend">+9.7% this month</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Total Properties</div>
+            <strong>1,250</strong>
+            <span class="trend">+74 new listings</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Active Properties</div>
+            <strong>864</strong>
+            <span class="trend">+38 active today</span>
+          </div>
+        </div>
+
+        <div class="metric-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 28px;">
+          <div class="metric-card">
+            <div class="label">Pending Properties</div>
+            <strong>126</strong>
+            <span class="trend">Needs review</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Total Bookings</div>
+            <strong>7,890</strong>
+            <span class="trend">+480 this month</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Pending Bookings</div>
+            <strong>216</strong>
+            <span class="trend">Awaiting action</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Total Inquiries</div>
+            <strong>3,920</strong>
+            <span class="trend">+154 this week</span>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Recent Registrations</h3>
+              <a href="users.html" class="auth-link">View all</a>
+            </div>
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Role</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Emily Carter</td>
+                    <td>User</td>
+                    <td>12 Aug 2026</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Owen Brooks</td>
+                    <td>Owner</td>
+                    <td>11 Aug 2026</td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>Nina Scott</td>
+                    <td>User</td>
+                    <td>10 Aug 2026</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Property Status Overview</h3>
+            </div>
+            <div class="chart" aria-label="Property status chart">
+              <div class="bar-col"><span>Approved</span><div class="bar" style="height: 76%;"></div></div>
+              <div class="bar-col"><span>Pending</span><div class="bar bar-alt" style="height: 48%;"></div></div>
+              <div class="bar-col"><span>Rejected</span><div class="bar" style="height: 22%;"></div></div>
+              <div class="bar-col"><span>Sold</span><div class="bar bar-alt" style="height: 58%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Recent Properties</h3>
+              <a href="properties.html" class="auth-link">Manage</a>
+            </div>
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ocean View Villa</td>
+                    <td>David Morgan</td>
+                    <td><span class="status-badge status-active">Approved</span></td>
+                    <td>12 Aug 2026</td>
+                  </tr>
+                  <tr>
+                    <td>Harbor Point</td>
+                    <td>Elena White</td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                    <td>11 Aug 2026</td>
+                  </tr>
+                  <tr>
+                    <td>Skyline Residence</td>
+                    <td>Robert Chan</td>
+                    <td><span class="status-badge status-rejected">Rejected</span></td>
+                    <td>10 Aug 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Booking Status Overview</h3>
+            </div>
+            <div class="chart" aria-label="Booking chart">
+              <div class="bar-col"><span>Pending</span><div class="bar" style="height: 42%;"></div></div>
+              <div class="bar-col"><span>Confirmed</span><div class="bar bar-alt" style="height: 68%;"></div></div>
+              <div class="bar-col"><span>Completed</span><div class="bar" style="height: 58%;"></div></div>
+              <div class="bar-col"><span>Cancelled</span><div class="bar bar-alt" style="height: 18%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

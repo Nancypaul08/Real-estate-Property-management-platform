@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inquiries | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard"><span class="brand-mark">R</span><span class="brand-text">PropertyPro</span></a>
+        <nav class="sidebar-nav" aria-label="Owner sidebar navigation">
+          <a href="dashboard.html">Dashboard</a><a href="add-property.html">Add Property</a><a href="my-properties.html">My Properties</a>
+          <a class="active" href="inquiries.html">Inquiries</a><a href="profile.html">Profile</a><a href="settings.html">Settings</a><a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar"><h1>Inquiries</h1><a class="btn btn-primary btn-small" href="my-properties.html">My Properties</a></div>
+        <section class="panel">
+          <div class="panel-header"><h3>Recent inquiries</h3><span class="status-pill">3 new</span></div>
+          <div class="table-wrap"><table class="table"><thead><tr><th>Name</th><th>Property</th><th>Message</th><th>Status</th></tr></thead><tbody>
+            <tr><td>Emma Johnson</td><td>Ocean View Villa</td><td>Is this property available?</td><td><span class="status-badge status-pending">New</span></td></tr>
+            <tr><td>Daniel Lee</td><td>Skyline Residence</td><td>I would like to arrange a visit.</td><td><span class="status-badge status-confirmed">Replied</span></td></tr>
+            <tr><td>Sarah Green</td><td>Maple Crest House</td><td>Please share more details.</td><td><span class="status-badge status-pending">New</span></td></tr>
+          </tbody></table></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

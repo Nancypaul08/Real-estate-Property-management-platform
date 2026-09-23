@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REAL ESTATE PROPERTY MANAGEMENT PLATFORM</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">REAL ESTATE PROPERTY MANAGEMENT PLATFORM</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Owner sidebar navigation">
+          <a class="active" href="dashboard.html">Dashboard</a>
+          <a href="add-property.html">Add Property</a>
+          <a href="my-properties.html">My Properties</a>
+          <a href="inquiries.html">Inquiries</a>
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Owner Dashboard</h1>
+          <div class="topbar-actions">
+            <input class="field search-box-small" type="text" value="Search" />
+            <span class="avatar-badge">DM</span>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <div class="label">Total Properties</div>
+            <strong>24</strong>
+            <span class="trend">+12% this month</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Active Properties</div>
+            <strong>18</strong>
+            <span class="trend">+8% this month</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Pending Properties</div>
+            <strong>4</strong>
+            <span class="trend">2 awaiting review</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Total Inquiries</div>
+            <strong>132</strong>
+            <span class="trend">+15 this week</span>
+          </div>
+          <div class="metric-card">
+            <div class="label">Bookings</div>
+            <strong>42</strong>
+            <span class="trend">+6 this week</span>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Property Performance</h3>
+              <span class="status-pill">This Year</span>
+            </div>
+            <div class="chart" aria-label="Monthly performance chart">
+              <div class="bar-col"><span>Jan</span><div class="bar" style="height: 38%;"></div></div>
+              <div class="bar-col"><span>Feb</span><div class="bar" style="height: 52%;"></div></div>
+              <div class="bar-col"><span>Mar</span><div class="bar" style="height: 64%;"></div></div>
+              <div class="bar-col"><span>Apr</span><div class="bar" style="height: 74%;"></div></div>
+              <div class="bar-col"><span>May</span><div class="bar" style="height: 62%;"></div></div>
+              <div class="bar-col"><span>Jun</span><div class="bar" style="height: 84%;"></div></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Quick Summary</h3>
+            </div>
+            <div class="stats-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+              <div class="stats-card">
+                <span class="stats-number">4.8k</span>
+                <h3>Views</h3>
+              </div>
+              <div class="stats-card">
+                <span class="stats-number">286</span>
+                <h3>Inquiries</h3>
+              </div>
+              <div class="stats-card">
+                <span class="stats-number">54</span>
+                <h3>Bookings</h3>
+              </div>
+              <div class="stats-card">
+                <span class="stats-number">92%</span>
+                <h3>Response Rate</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Recent Inquiries</h3>
+              <a href="inquiries.html" class="auth-link">View all</a>
+            </div>
+
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Property</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Emma Johnson</td>
+                    <td>Ocean View Villa</td>
+                    <td>12 Aug 2026</td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                    <td><a href="#" class="action-btn primary">Reply</a></td>
+                  </tr>
+                  <tr>
+                    <td>Daniel Lee</td>
+                    <td>Skyline Residence</td>
+                    <td>10 Aug 2026</td>
+                    <td><span class="status-badge status-confirmed">Confirmed</span></td>
+                    <td><a href="#" class="action-btn">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>Sarah Green</td>
+                    <td>Maple Crest House</td>
+                    <td>09 Aug 2026</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td><a href="#" class="action-btn">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Recent Properties</h3>
+              <a href="add-property.html" class="auth-link">Add New</a>
+            </div>
+
+            <div class="list-card-grid">
+              <div class="list-card">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Property" />
+                <div>
+                  <h4>Ocean View Villa</h4>
+                  <div class="card-row">
+                    <span>Malibu</span>
+                    <span class="status-badge status-active">Active</span>
+                  </div>
+                  <div class="meta">
+                    <span>$2.8M</span>
+                    <span>4 Beds</span>
+                  </div>
+                  <div class="form-actions" style="justify-content: flex-start; margin-top: 10px;">
+                    <a href="edit-property.html" class="btn btn-secondary btn-small">Edit</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-card">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Property" />
+                <div>
+                  <h4>Skyline Residence</h4>
+                  <div class="card-row">
+                    <span>New York</span>
+                    <span class="status-badge status-pending">Pending</span>
+                  </div>
+                  <div class="meta">
+                    <span>$980K</span>
+                    <span>3 Beds</span>
+                  </div>
+                  <div class="form-actions" style="justify-content: flex-start; margin-top: 10px;">
+                    <a href="edit-property.html" class="btn btn-secondary btn-small">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

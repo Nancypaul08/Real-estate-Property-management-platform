@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Users | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Admin sidebar navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a class="active" href="users.html">Users</a>
+          <a href="properties.html">Properties</a>
+          <a href="bookings.html">Bookings</a>
+          <a href="dashboard.html">Reports</a>
+          <a href="dashboard.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Manage Users</h1>
+          <div class="topbar-actions">
+            <input class="field search-box-small" type="text" value="Search users" />
+            <a href="dashboard.html" class="btn btn-primary btn-small">Export</a>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 24px;">
+          <div class="section-title">
+            <h3>Filters</h3>
+            <div class="toolbar-actions">
+              <select class="field" style="min-width: 160px;">
+                <option>Role: All</option>
+                <option>User</option>
+                <option>Owner</option>
+                <option>Admin</option>
+              </select>
+              <select class="field" style="min-width: 160px;">
+                <option>Status: All</option>
+                <option>Active</option>
+                <option>Suspended</option>
+                <option>Pending</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>User ID</th>
+                <th>Profile</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Registration Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>USR-1042</td>
+                <td><img class="user-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80" alt="User profile" /></td>
+                <td>Emma Johnson</td>
+                <td>emma@example.com</td>
+                <td>+1 415 678 2032</td>
+                <td>User</td>
+                <td>12 Aug 2026</td>
+                <td><span class="status-badge status-active">Active</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Edit</a></td>
+              </tr>
+              <tr>
+                <td>OWN-2078</td>
+                <td><img class="user-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80" alt="Owner profile" /></td>
+                <td>David Morgan</td>
+                <td>david@propertypro.com</td>
+                <td>+1 415 678 2022</td>
+                <td>Owner</td>
+                <td>09 Aug 2026</td>
+                <td><span class="status-badge status-active">Active</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Edit</a></td>
+              </tr>
+              <tr>
+                <td>ADM-001</td>
+                <td><img class="user-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80" alt="Admin profile" /></td>
+                <td>Alex Green</td>
+                <td>alex@propertypro.com</td>
+                <td>+1 415 099 4401</td>
+                <td>Admin</td>
+                <td>04 Aug 2026</td>
+                <td><span class="status-badge status-active">Active</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Edit</a></td>
+              </tr>
+              <tr>
+                <td>USR-1098</td>
+                <td><img class="user-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80" alt="User profile" /></td>
+                <td>Sarah Green</td>
+                <td>sarah@example.com</td>
+                <td>+1 415 230 9920</td>
+                <td>User</td>
+                <td>02 Aug 2026</td>
+                <td><span class="status-badge status-suspended">Suspended</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Activate</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

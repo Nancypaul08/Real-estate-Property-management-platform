@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard"><span class="brand-mark">R</span><span class="brand-text">PropertyPro</span></a>
+        <nav class="sidebar-nav" aria-label="Owner sidebar navigation">
+          <a href="dashboard.html">Dashboard</a><a href="add-property.html">Add Property</a><a href="my-properties.html">My Properties</a>
+          <a href="inquiries.html">Inquiries</a><a href="profile.html">Profile</a><a class="active" href="settings.html">Settings</a><a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar"><h1>Settings</h1></div>
+        <section class="panel">
+          <div class="panel-header"><h3>Notification settings</h3></div>
+          <form class="owner-form" action="settings.html">
+            <label class="checkbox-wrap"><input type="checkbox" checked /> <span>Receive email notifications for new inquiries</span></label>
+            <label class="checkbox-wrap"><input type="checkbox" checked /> <span>Receive booking updates</span></label>
+            <div class="field"><label for="language">Language</label><select id="language"><option>English</option><option>Hindi</option></select></div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Save Settings</button></div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

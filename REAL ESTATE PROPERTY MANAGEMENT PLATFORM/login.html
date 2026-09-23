@@ -29,12 +29,12 @@
           <form class="auth-form" action="owner/dashboard.html">
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" type="email" placeholder="you@example.com" />
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
             </div>
 
             <div class="field">
               <label for="password">Password</label>
-              <input id="password" type="password" placeholder="Enter your password" />
+              <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="6" required />
             </div>
 
             <div class="check-row">

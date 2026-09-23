@@ -68,29 +68,29 @@
               <div class="form-row">
                 <div class="field">
                   <label for="inq-name">Full Name</label>
-                  <input id="inq-name" type="text" value="Emma Johnson" />
+                  <input id="inq-name" type="text" value="Emma Johnson" required />
                 </div>
                 <div class="field">
                   <label for="inq-email">Email</label>
-                  <input id="inq-email" type="email" value="emma@example.com" />
+                  <input id="inq-email" type="email" value="emma@example.com" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="field">
                   <label for="inq-phone">Phone</label>
-                  <input id="inq-phone" type="tel" value="+1 415 678 2032" />
+                  <input id="inq-phone" type="tel" value="+1 415 678 2032" required />
                 </div>
                 <div class="field">
                   <label for="inq-date">Preferred Visit Date</label>
-                  <input id="inq-date" type="date" />
+                  <input id="inq-date" type="date" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="field">
                   <label for="inq-time">Preferred Time</label>
-                  <select id="inq-time">
+                  <select id="inq-time" required>
                     <option>Morning</option>
                     <option>Afternoon</option>
                     <option>Evening</option>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="field">
                   <label for="inq-type">Inquiry Type</label>
-                  <select id="inq-type">
+                  <select id="inq-type" required>
                     <option>General Inquiry</option>
                     <option>Book Viewing</option>
                     <option>Pricing Details</option>
@@ -109,7 +109,7 @@
 
               <div class="field">
                 <label for="inq-message">Message</label>
-                <textarea id="inq-message">Hello, I would like to schedule a property visit and learn more about the financing options available.</textarea>
+                <textarea id="inq-message" required>Hello, I would like to schedule a property visit and learn more about the financing options available.</textarea>
               </div>
 
               <button type="submit" class="btn btn-primary">Submit Inquiry</button>

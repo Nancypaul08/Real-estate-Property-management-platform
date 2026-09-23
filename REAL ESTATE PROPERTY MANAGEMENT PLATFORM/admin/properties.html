@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Properties | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard">
+          <span class="brand-mark">R</span>
+          <span class="brand-text">PropertyPro</span>
+        </a>
+
+        <nav class="sidebar-nav" aria-label="Admin sidebar navigation">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="users.html">Users</a>
+          <a class="active" href="properties.html">Properties</a>
+          <a href="bookings.html">Bookings</a>
+          <a href="dashboard.html">Reports</a>
+          <a href="dashboard.html">Settings</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Manage Properties</h1>
+          <div class="topbar-actions">
+            <input class="field search-box-small" type="text" value="Search property" />
+            <a href="dashboard.html" class="btn btn-primary btn-small">Export</a>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 24px;">
+          <div class="section-title">
+            <h3>Filter Properties</h3>
+            <div class="toolbar-actions">
+              <select class="field" style="min-width: 160px;">
+                <option>Type: All</option>
+                <option>Villa</option>
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Commercial</option>
+              </select>
+              <select class="field" style="min-width: 160px;">
+                <option>Status: All</option>
+                <option>Pending</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+                <option>Sold</option>
+                <option>Rented</option>
+              </select>
+              <select class="field" style="min-width: 160px;">
+                <option>Location: All</option>
+                <option>New York</option>
+                <option>Miami</option>
+                <option>Chicago</option>
+                <option>Malibu</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Property Image</th>
+                <th>Property Title</th>
+                <th>Owner</th>
+                <th>Location</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:72px;height:52px;border-radius:10px;object-fit:cover;" /></td>
+                <td>Ocean View Villa</td>
+                <td>David Morgan</td>
+                <td>Malibu, CA</td>
+                <td>$2.8M</td>
+                <td>Villa</td>
+                <td>12 Aug 2026</td>
+                <td><span class="status-badge status-active">Approved</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Approve</a></td>
+              </tr>
+              <tr>
+                <td><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:72px;height:52px;border-radius:10px;object-fit:cover;" /></td>
+                <td>Skyline Residence</td>
+                <td>Robert Chan</td>
+                <td>New York, NY</td>
+                <td>$980K</td>
+                <td>Apartment</td>
+                <td>11 Aug 2026</td>
+                <td><span class="status-badge status-pending">Pending</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Approve</a></td>
+              </tr>
+              <tr>
+                <td><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80" alt="Property" style="width:72px;height:52px;border-radius:10px;object-fit:cover;" /></td>
+                <td>Maple Crest House</td>
+                <td>Elena White</td>
+                <td>Austin, TX</td>
+                <td>$1.6M</td>
+                <td>House</td>
+                <td>09 Aug 2026</td>
+                <td><span class="status-badge status-rejected">Rejected</span></td>
+                <td><a href="#" class="action-btn">View</a><a href="#" class="action-btn primary">Approve</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

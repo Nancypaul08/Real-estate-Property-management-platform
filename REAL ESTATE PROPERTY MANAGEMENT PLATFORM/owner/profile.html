@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro dashboard"><span class="brand-mark">R</span><span class="brand-text">PropertyPro</span></a>
+        <nav class="sidebar-nav" aria-label="Owner sidebar navigation">
+          <a href="dashboard.html">Dashboard</a><a href="add-property.html">Add Property</a><a href="my-properties.html">My Properties</a>
+          <a href="inquiries.html">Inquiries</a><a class="active" href="profile.html">Profile</a><a href="settings.html">Settings</a><a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar"><h1>My Profile</h1></div>
+        <section class="panel">
+          <div class="panel-header"><h3>Owner details</h3></div>
+          <form class="owner-form" action="profile.html">
+            <div class="form-row"><div class="field"><label for="name">Full name</label><input id="name" type="text" value="David Miller" /></div><div class="field"><label for="email">Email</label><input id="email" type="email" value="david@example.com" /></div></div>
+            <div class="form-row"><div class="field"><label for="phone">Phone</label><input id="phone" type="tel" value="+1 415 555 0142" /></div><div class="field"><label for="city">City</label><input id="city" type="text" value="New York" /></div></div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Save Profile</button></div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
