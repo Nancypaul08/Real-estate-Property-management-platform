@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashboard | PropertyPro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="dashboard.html" class="brand" aria-label="PropertyPro user dashboard">
+          <span class="brand-mark">R</span><span class="brand-text">PropertyPro</span>
+        </a>
+        <nav class="sidebar-nav" aria-label="User sidebar navigation">
+          <a class="active" href="dashboard.html">Dashboard</a>
+          <a href="../properties.html">Browse Properties</a>
+          <a href="#saved-properties">Saved Properties</a>
+          <a href="#viewings">My Viewings</a>
+          <a href="#inquiries">My Inquiries</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div>
+            <h1>Welcome back, Emma</h1>
+            <p>Keep track of the homes and viewings that matter to you.</p>
+          </div>
+          <div class="topbar-actions">
+            <a href="../properties.html" class="btn btn-primary btn-small">Explore Properties</a>
+            <span class="avatar-badge" aria-label="Emma Johnson">EJ</span>
+          </div>
+        </div>
+
+        <div class="metric-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+          <div class="metric-card"><div class="label">Saved Properties</div><strong>8</strong><span class="trend">2 added this week</span></div>
+          <div class="metric-card"><div class="label">Upcoming Viewings</div><strong>2</strong><span class="trend">Next: 18 Sep, 10:00 AM</span></div>
+          <div class="metric-card"><div class="label">Active Inquiries</div><strong>3</strong><span class="trend">1 new reply</span></div>
+          <div class="metric-card"><div class="label">Recently Viewed</div><strong>14</strong><span class="trend">Across 4 locations</span></div>
+        </div>
+
+        <div class="dashboard-grid" id="viewings">
+          <section class="panel">
+            <div class="panel-header"><h3>Upcoming Viewings</h3><a href="../inquiry.html" class="auth-link">Book a viewing</a></div>
+            <div class="table-wrap">
+              <table class="table">
+                <thead><tr><th>Property</th><th>Date &amp; time</th><th>Owner</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td>Ocean View Villa</td><td>18 Sep 2026, 10:00 AM</td><td>David Morgan</td><td><span class="status-badge status-confirmed">Confirmed</span></td></tr>
+                  <tr><td>Skyline Residence</td><td>21 Sep 2026, 2:30 PM</td><td>Robert Chan</td><td><span class="status-badge status-pending">Pending</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="panel" id="inquiries">
+            <div class="panel-header"><h3>Recent Inquiries</h3><a href="../inquiry.html" class="auth-link">New inquiry</a></div>
+            <div class="table-wrap">
+              <table class="table">
+                <thead><tr><th>Property</th><th>Owner response</th><th>Updated</th></tr></thead>
+                <tbody>
+                  <tr><td>Harbor Point</td><td>Viewing times available</td><td>Today</td></tr>
+                  <tr><td>Maplewood Townhouse</td><td>Awaiting response</td><td>Yesterday</td></tr>
+                  <tr><td>Skyline Residence</td><td>Financing details sent</td><td>14 Sep</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel" id="saved-properties">
+          <div class="panel-header"><h3>Saved Properties</h3><a href="../properties.html" class="auth-link">View all properties</a></div>
+          <div class="list-card-grid">
+            <article class="list-card">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80" alt="Ocean View Villa" />
+              <div><div class="card-row"><h4>Ocean View Villa</h4><span class="status-pill">For Sale</span></div><p class="meta">Malibu, CA · 4 beds · 3 baths</p><p><strong>$1,250,000</strong></p><a href="../property-details.html" class="btn btn-secondary btn-small">View details</a></div>
+            </article>
+            <article class="list-card">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Maplewood Townhouse" />
+              <div><div class="card-row"><h4>Maplewood Townhouse</h4><span class="status-pill">For Rent</span></div><p class="meta">Austin, TX · 3 beds · 2 baths</p><p><strong>$3,200/month</strong></p><a href="../property-details.html" class="btn btn-secondary btn-small">View details</a></div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
