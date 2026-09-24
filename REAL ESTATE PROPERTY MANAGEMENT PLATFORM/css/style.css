@@ -920,7 +920,24 @@ p {
   border: 2px solid transparent;
 }
 
-.thumb-grid img.active {
+.gallery-thumb.active img {
+  border-color: var(--primary);
+}
+
+.gallery-thumb {
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-thumb img {
+  width: 100%;
+}
+
+.gallery-thumb.active {
   border-color: var(--primary);
 }
 

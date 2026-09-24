@@ -49,15 +49,15 @@
           <div class="details-layout">
             <div class="gallery-panel">
               <div class="main-gallery">
-                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Ocean view villa exterior" />
-                <span class="gallery-counter">1 / 5</span>
+                <img id="gallery-image" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Ocean view villa exterior" />
+                <span class="gallery-counter" id="gallery-counter" aria-live="polite">1 / 4</span>
               </div>
 
               <div class="thumb-grid">
-                <img class="active" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Villa view 1" />
-                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Villa view 2" />
-                <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80" alt="Villa view 3" />
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Villa view 4" />
+                <button type="button" class="gallery-thumb active" aria-label="Show villa view 1" aria-pressed="true" data-image="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Villa exterior" /></button>
+                <button type="button" class="gallery-thumb" aria-label="Show villa view 2" aria-pressed="false" data-image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Villa interior" /></button>
+                <button type="button" class="gallery-thumb" aria-label="Show villa view 3" aria-pressed="false" data-image="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80" alt="Villa living room" /></button>
+                <button type="button" class="gallery-thumb" aria-label="Show villa view 4" aria-pressed="false" data-image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Villa from the garden" /></button>
               </div>
             </div>
 
@@ -285,5 +285,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/property-details.js" defer></script>
   </body>
 </html>
