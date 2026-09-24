@@ -6,7 +6,7 @@ A frontend-based web platform designed to make **property discovery and property
 
 The **Real Estate Property Management Platform** provides separate interfaces for users, property owners, and administrators.
 
-The project is currently being developed using **HTML and CSS** as the frontend technologies.
+The project is a static frontend built with **HTML, CSS, and vanilla JavaScript**. Its sample accounts, listings, dashboards, and form submissions are demo interactions; it does not currently connect to a backend or store user data.
 
 ## 🎯 Objectives
 
@@ -49,6 +49,14 @@ Real-estate-Property-management-platform/
 │
 ├── css/
 │   └── style.css
+├── js/
+│   ├── inquiry.js
+│   ├── properties.js
+│   ├── property-details.js
+│   └── register.js
+│
+├── user/
+│   └── dashboard.html
 │
 ├── owner/
 │   ├── dashboard.html
@@ -62,3 +70,14 @@ Real-estate-Property-management-platform/
     ├── properties.html
     └── bookings.html
 ```
+
+## Run locally
+
+Open `REAL ESTATE PROPERTY MANAGEMENT PLATFORM/index.html` in a browser, or serve the project with a local static server such as the VS Code Live Server extension. No package installation or build step is required.
+
+## Demo behavior
+
+- Property search, filters, and sorting run in the browser against the sample listings.
+- The property detail page includes a selectable photo gallery.
+- Registration checks the password fields and routes to a role dashboard. Login routes to a selected dashboard.
+- Inquiry and account forms do not transmit or save personal information. A backend is needed for real accounts and submissions.
