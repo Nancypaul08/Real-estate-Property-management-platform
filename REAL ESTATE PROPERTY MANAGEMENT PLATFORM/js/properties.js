@@ -10,6 +10,7 @@ if (listingPage) {
   const sidebarMaximum = document.querySelector("#filter-max");
   const resultCount = document.querySelector("#results-count");
   const emptyMessage = document.querySelector("#no-results");
+  const sortSelect = document.querySelector("#sort-properties");
   const filterInputs = [...document.querySelectorAll("[data-filter]")];
 
   function selectedValues(group) {
@@ -45,6 +46,17 @@ if (listingPage) {
     resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? "Property" : "Properties"} Found`;
     emptyMessage.hidden = visibleCount !== 0;
   }
+
+  sortSelect.addEventListener("change", () => {
+    const sorters = {
+      "Price: Low to High": (a, b) => Number(a.dataset.price) - Number(b.dataset.price),
+      "Price: High to Low": (a, b) => Number(b.dataset.price) - Number(a.dataset.price),
+      Newest: (a, b) => b.dataset.listed.localeCompare(a.dataset.listed),
+    };
+    const sorter = sorters[sortSelect.value.replace("Sort: ", "")];
+    const orderedCards = sorter ? [...cards].sort(sorter) : cards;
+    orderedCards.forEach((card) => listingPage.append(card));
+  });
 
   document.querySelector("#search-properties").addEventListener("click", applySearch);
   document.querySelector("#apply-filters").addEventListener("click", applySearch);

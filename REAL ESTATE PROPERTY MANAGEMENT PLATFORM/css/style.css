@@ -53,6 +53,10 @@ textarea {
   font: inherit;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .container {
   width: min(var(--container), calc(100% - 32px));
   margin: 0 auto;
