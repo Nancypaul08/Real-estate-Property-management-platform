@@ -64,33 +64,33 @@
 
           <div class="form-card">
             <h3>Send an Inquiry</h3>
-            <form class="user-form" action="index.html">
+            <form class="user-form" id="inquiry-form">
               <div class="form-row">
                 <div class="field">
                   <label for="inq-name">Full Name</label>
-                  <input id="inq-name" type="text" value="Emma Johnson" required />
+                  <input id="inq-name" name="name" type="text" autocomplete="name" required />
                 </div>
                 <div class="field">
                   <label for="inq-email">Email</label>
-                  <input id="inq-email" type="email" value="emma@example.com" required />
+                  <input id="inq-email" name="email" type="email" autocomplete="email" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="field">
                   <label for="inq-phone">Phone</label>
-                  <input id="inq-phone" type="tel" value="+1 415 678 2032" required />
+                  <input id="inq-phone" name="phone" type="tel" autocomplete="tel" required />
                 </div>
                 <div class="field">
                   <label for="inq-date">Preferred Visit Date</label>
-                  <input id="inq-date" type="date" required />
+                  <input id="inq-date" name="visit-date" type="date" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="field">
                   <label for="inq-time">Preferred Time</label>
-                  <select id="inq-time" required>
+                  <select id="inq-time" name="visit-time" required>
                     <option>Morning</option>
                     <option>Afternoon</option>
                     <option>Evening</option>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="field">
                   <label for="inq-type">Inquiry Type</label>
-                  <select id="inq-type" required>
+                  <select id="inq-type" name="inquiry-type" required>
                     <option>General Inquiry</option>
                     <option>Book Viewing</option>
                     <option>Pricing Details</option>
@@ -109,11 +109,11 @@
 
               <div class="field">
                 <label for="inq-message">Message</label>
-                <textarea id="inq-message" required>Hello, I would like to schedule a property visit and learn more about the financing options available.</textarea>
+                <textarea id="inq-message" name="message" placeholder="Tell the owner what you would like to know." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary">Submit Inquiry</button>
-              <div class="notice">Your inquiry will be sent to the property owner.</div>
+              <div class="notice" id="inquiry-status" role="status">This demo form does not send data to a server.</div>
             </form>
           </div>
         </div>
@@ -163,5 +163,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/inquiry.js" defer></script>
   </body>
 </html>
