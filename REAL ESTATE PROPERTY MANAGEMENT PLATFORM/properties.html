@@ -73,6 +73,7 @@
               <div class="field">
                 <label for="max-price">Max Price</label>
                 <select id="max-price">
+                  <option value="" selected>Any maximum</option>
                   <option value="1000000">$1M</option>
                   <option value="2000000">$2M</option>
                   <option value="5000000">$5M</option>
@@ -88,11 +89,11 @@
               <div class="sidebar-card">
                 <h3>Filter by Property Type</h3>
                 <div class="filter-group">
-                  <label class="filter-item"><span>Apartment</span><input type="checkbox" checked /></label>
-                  <label class="filter-item"><span>Villa</span><input type="checkbox" /></label>
-                  <label class="filter-item"><span>House</span><input type="checkbox" checked /></label>
-                  <label class="filter-item"><span>Commercial</span><input type="checkbox" /></label>
-                  <label class="filter-item"><span>Land</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>Apartment</span><input type="checkbox" value="Apartment" data-filter="type" /></label>
+                  <label class="filter-item"><span>Villa</span><input type="checkbox" value="Villa" data-filter="type" /></label>
+                  <label class="filter-item"><span>House</span><input type="checkbox" value="House" data-filter="type" /></label>
+                  <label class="filter-item"><span>Commercial</span><input type="checkbox" value="Commercial" data-filter="type" /></label>
+                  <label class="filter-item"><span>Land</span><input type="checkbox" value="Land" data-filter="type" /></label>
                 </div>
               </div>
 
@@ -101,11 +102,11 @@
                 <div class="filter-group">
                   <div class="field">
                     <label for="filter-min">Min</label>
-                    <input id="filter-min" type="text" value="$500k" />
+                    <input id="filter-min" type="number" min="0" placeholder="No minimum" />
                   </div>
                   <div class="field">
                     <label for="filter-max">Max</label>
-                    <input id="filter-max" type="text" value="$5M" />
+                    <input id="filter-max" type="number" min="0" placeholder="No maximum" />
                   </div>
                 </div>
               </div>
@@ -113,20 +114,20 @@
               <div class="sidebar-card">
                 <h3>Location</h3>
                 <div class="filter-group">
-                  <label class="filter-item"><span>New York</span><input type="checkbox" checked /></label>
-                  <label class="filter-item"><span>Chicago</span><input type="checkbox" /></label>
-                  <label class="filter-item"><span>Los Angeles</span><input type="checkbox" /></label>
-                  <label class="filter-item"><span>Miami</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>New York</span><input type="checkbox" value="New York" data-filter="location" /></label>
+                  <label class="filter-item"><span>Chicago</span><input type="checkbox" value="Chicago" data-filter="location" /></label>
+                  <label class="filter-item"><span>Los Angeles</span><input type="checkbox" value="Los Angeles" data-filter="location" /></label>
+                  <label class="filter-item"><span>Miami</span><input type="checkbox" value="Miami" data-filter="location" /></label>
                 </div>
               </div>
 
               <div class="sidebar-card">
                 <h3>Bedrooms</h3>
                 <div class="filter-group">
-                  <label class="filter-item"><span>1+</span><input type="checkbox" /></label>
-                  <label class="filter-item"><span>2+</span><input type="checkbox" checked /></label>
-                  <label class="filter-item"><span>3+</span><input type="checkbox" checked /></label>
-                  <label class="filter-item"><span>4+</span><input type="checkbox" /></label>
+                  <label class="filter-item"><span>1+</span><input type="checkbox" value="1" data-filter="beds" /></label>
+                  <label class="filter-item"><span>2+</span><input type="checkbox" value="2" data-filter="beds" /></label>
+                  <label class="filter-item"><span>3+</span><input type="checkbox" value="3" data-filter="beds" /></label>
+                  <label class="filter-item"><span>4+</span><input type="checkbox" value="4" data-filter="beds" /></label>
                 </div>
               </div>
 
@@ -150,8 +151,8 @@
 
               <div class="sidebar-card">
                 <div class="form-actions" style="justify-content: flex-start;">
-                  <button type="button" class="btn btn-primary">Apply Filters</button>
-                  <button type="button" class="btn btn-outline">Clear Filters</button>
+                  <button id="apply-filters" type="button" class="btn btn-primary">Apply Filters</button>
+                  <button id="clear-filters" type="button" class="btn btn-outline">Clear Filters</button>
                 </div>
               </div>
             </aside>
