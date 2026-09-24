@@ -46,19 +46,19 @@
             <div class="form-row">
               <div class="field">
                 <label for="reg-password">Password</label>
-                <input id="reg-password" type="password" placeholder="Create password" minlength="6" required />
+                  <input id="reg-password" type="password" placeholder="Create password" minlength="6" autocomplete="new-password" required />
               </div>
               <div class="field">
                 <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" type="password" placeholder="Confirm password" minlength="6" required />
+                  <input id="confirm-password" type="password" placeholder="Confirm password" minlength="6" autocomplete="new-password" required />
               </div>
             </div>
 
             <div class="field">
               <label for="user-type">User Type</label>
               <select id="user-type" required>
-                <option>Buyer / Tenant</option>
-                <option>Property Owner</option>
+                <option value="user/dashboard.html">Buyer / Tenant</option>
+                <option value="owner/dashboard.html">Property Owner</option>
               </select>
             </div>
 
@@ -77,5 +77,6 @@
         </div>
       </div>
     </div>
+    <script src="js/register.js" defer></script>
   </body>
 </html>
