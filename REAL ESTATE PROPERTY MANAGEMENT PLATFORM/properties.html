@@ -64,22 +64,22 @@
               <div class="field">
                 <label for="min-price">Min Price</label>
                 <select id="min-price">
-                  <option>$500k</option>
-                  <option>$1M</option>
-                  <option>$2M</option>
-                  <option>$5M</option>
+                  <option value="0">No minimum</option>
+                  <option value="500000">$500k</option>
+                  <option value="1000000">$1M</option>
+                  <option value="2000000">$2M</option>
                 </select>
               </div>
               <div class="field">
                 <label for="max-price">Max Price</label>
                 <select id="max-price">
-                  <option>$1M</option>
-                  <option>$2M</option>
-                  <option>$5M</option>
-                  <option>$10M</option>
+                  <option value="1000000">$1M</option>
+                  <option value="2000000">$2M</option>
+                  <option value="5000000">$5M</option>
+                  <option value="10000000">$10M</option>
                 </select>
               </div>
-              <a href="properties.html" class="btn btn-primary">Search</a>
+              <button id="search-properties" type="button" class="btn btn-primary">Search</button>
             </div>
           </div>
 
@@ -160,7 +160,7 @@
               <div class="list-toolbar">
                 <h2 id="results-count" aria-live="polite">8 Properties Found</h2>
                 <div class="toolbar-actions">
-                  <select class="field" style="min-width: 160px;">
+                  <select id="sort-properties" class="field" style="min-width: 160px;">
                     <option>Sort: Featured</option>
                     <option>Price: Low to High</option>
                     <option>Price: High to Low</option>
@@ -173,7 +173,8 @@
                 </div>
               </div>
 
-              <div class="product-grid">
+              <p id="no-results" role="status" hidden>No properties match those filters. Try changing your search.</p>
+              <div class="product-grid" id="property-results">
                 <article class="card property-card large" data-type="Villa" data-location="Malibu, California" data-price="2800000" data-beds="4">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Featured</span>
@@ -431,5 +432,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/properties.js" defer></script>
   </body>
 </html>
