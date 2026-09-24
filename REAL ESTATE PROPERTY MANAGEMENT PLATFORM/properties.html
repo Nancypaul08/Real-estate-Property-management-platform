@@ -48,16 +48,17 @@
             <div class="search-box">
               <div class="field">
                 <label for="search-location">Location</label>
-                <input id="search-location" type="text" value="Any city" />
+                  <input id="search-location" type="search" placeholder="City or neighborhood" autocomplete="off" />
               </div>
               <div class="field">
                 <label for="search-type">Property Type</label>
                 <select id="search-type">
-                  <option>Apartment</option>
-                  <option>Villa</option>
-                  <option>House</option>
-                  <option>Commercial</option>
-                  <option>Land</option>
+                  <option value="">Any type</option>
+                  <option value="Apartment">Apartment</option>
+                  <option value="Villa">Villa</option>
+                  <option value="House">House</option>
+                  <option value="Commercial">Commercial</option>
+                  <option value="Land">Land</option>
                 </select>
               </div>
               <div class="field">
@@ -157,7 +158,7 @@
 
             <section>
               <div class="list-toolbar">
-                <h2>48 Properties Found</h2>
+                <h2 id="results-count" aria-live="polite">8 Properties Found</h2>
                 <div class="toolbar-actions">
                   <select class="field" style="min-width: 160px;">
                     <option>Sort: Featured</option>
@@ -173,7 +174,7 @@
               </div>
 
               <div class="product-grid">
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Villa" data-location="Malibu, California" data-price="2800000" data-beds="4">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Featured</span>
                     <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=80" alt="Luxury villa" />
@@ -199,7 +200,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Apartment" data-location="Manhattan, New York" data-price="980000" data-beds="3">
                   <div class="image-wrap">
                     <span class="badge featured-badge">New</span>
                     <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80" alt="Apartment exterior" />
@@ -225,7 +226,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="House" data-location="Austin, Texas" data-price="1600000" data-beds="4">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Popular</span>
                     <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="Family home" />
@@ -251,7 +252,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Commercial" data-location="Chicago, Illinois" data-price="4200000" data-beds="0">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Prime</span>
                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" alt="Commercial building" />
@@ -277,7 +278,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Townhouse" data-location="Seattle, Washington" data-price="1100000" data-beds="3">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Open</span>
                     <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Townhouse" />
@@ -303,7 +304,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Penthouse" data-location="Miami, Florida" data-price="3400000" data-beds="4">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Luxury</span>
                     <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80" alt="Luxury penthouse" />
@@ -329,7 +330,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Apartment" data-location="Boston, Massachusetts" data-price="740000" data-beds="2">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Ready</span>
                     <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1000&q=80" alt="Urban apartment" />
@@ -355,7 +356,7 @@
                   </div>
                 </article>
 
-                <article class="card property-card large">
+                <article class="card property-card large" data-type="Land" data-location="Denver, Colorado" data-price="620000" data-beds="0">
                   <div class="image-wrap">
                     <span class="badge featured-badge">Land</span>
                     <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80" alt="Vacant land" />
